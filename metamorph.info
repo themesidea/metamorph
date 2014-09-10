@@ -1,0 +1,8 @@
+name = MetaMorph
+description = "Drupal theme framework with drag & drop Page builder"
+core = 7.x
+engine = phptemplate
+
+; Required Core Regions
+
+lessc[] = lessc/style.less
