@@ -2,7 +2,7 @@
 
 require_once dirname(__FILE__) . '/lessc.php';
 
-class druplexp_theme extends stdClass {
+class metamorph_theme extends stdClass {
 
   var $theme;
   var $layouts;
@@ -282,7 +282,7 @@ function metamorph_get_theme() {
 
   $key = $GLOBALS['theme_key'];
   if (!isset($drupal_static[$key])) {
-    $drupal_static[$key] = new druplexp_theme($key);
+    $drupal_static[$key] = new metamorph_theme($key);
   }
   return $drupal_static[$key];
 }

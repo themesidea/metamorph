@@ -2258,11 +2258,6 @@ class lessc_parser {
 		$this->eatWhiteDefault = true;
 		$this->seenComments = array();
 
-		// trim whitespace on head
-		// if (preg_match('/^\s+/', $this->buffer, $m)) {
-		// 	$this->line += substr_count($m[0], "\n");
-		// 	$this->buffer = ltrim($this->buffer);
-		// }
 		$this->whitespace();
 
 		// parse the entire file
