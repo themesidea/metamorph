@@ -4,5 +4,23 @@ core = 7.x
 engine = phptemplate
 
 ; Required Core Regions
+regions[header] = Header
+regions[help] = Help
+regions[highlighted] = Highlighted
+regions[featured] = Featured
+regions[preface_first] = 'Preface First'
+regions[preface_second] = 'Preface Second'
+regions[preface_third] = 'Preface Third'
+regions[preface_fourth] = 'Preface Fourth'
+regions[content] = Content
+regions[sidebar_first] = 'Sidebar First'
+regions[sidebar_second] = 'Sidebar Second'
+regions[postscript_first] = 'Postscript First'
+regions[postscript_second] = 'Postscript Second'
+regions[postscript_third] = 'Postscript Third'
+regions[postscript_fourth] = 'Postscript Fourth'
+regions[footer] = Footer
+regions[page_top] = 'Page Top'
+regions[page_bottom] = 'Page Bottom'
 
 lessc[] = lessc/style.less
