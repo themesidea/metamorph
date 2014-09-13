@@ -75,10 +75,14 @@ li.metamorph-section{
   margin: 0 5px;
   cursor: move;
 }
-ul#metamorph_sections li{
+ul#metamorph_sections li {
   list-style: none;
   background: #fff;
 }
+ul#metamorph_sections li .region-inner .fa-wrench:hover {
+  color: #d2322d;
+}
+
 ul#metamorph_layouts{
   margin: 10px 0;
 }
@@ -161,3 +165,35 @@ div.vertical-tabs ul li.vertical-tab-button {
   outline: none;
 }
 
+
+
+/* UI STYLE */
+input.form-autocomplete, input.form-text, input.form-file, textarea.form-textarea, select.form-select {
+  outline: none;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+border: 1px solid #e1e1e1;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+  padding: 0;
+  background-image: none ;
+  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  border-left-color: #e1e1e1;
+  border-right-color: #e1e1e1;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.ui-button-text-only .ui-button-text:hover {
+  background-color: #f1f1f1;
+  color: #0074BD;
+}
+.ui-dialog {
+  box-shadow: 2px 4px 11px rgba(0,0,0, 0.6);
+}
+.ui-widget-overlay {
+  background: #000;
+  opacity: .45;
+  filter: Alpha(Opacity=45);
+}

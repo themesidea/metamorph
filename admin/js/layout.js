@@ -1,3 +1,7 @@
+/*! MetaMorph - v1.0.0 - 09-09-2014
+ * http://themesidea.co.uk/
+ * Copyright (c) 2014
+ */
 (function($){
 	var initLayout = function() {
 		var hash = window.location.hash.replace('#', '');
@@ -49,7 +53,7 @@
 			}
 		});
 	};
-	
+
 	var showTab = function(e) {
 		var tabIndex = $('ul.navigationTabs a')
 							.removeClass('active')
@@ -62,6 +66,6 @@
 				.eq(tabIndex)
 				.show();
 	};
-	
+
 	EYE.register(initLayout, 'init');
 })(jQuery)

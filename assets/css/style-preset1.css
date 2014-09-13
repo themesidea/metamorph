@@ -1,0 +1,17 @@
+body {
+  color: #494949;
+}
+a:not(.btn) {
+  color: #5ab5ee;
+}
+a:not(.btn):hover {
+  color: #027ac6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2385c2;
+}

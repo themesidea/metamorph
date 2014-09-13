@@ -1,6 +1,8 @@
-/*
- ** metamorph_layouts = [];
- ** metamorph_current_layour;
+/*! MetaMorph - v1.0.0 - 09-09-2014
+ * http://themesidea.co.uk/
+ * Copyright (c) 2014
+ * metamorph_layouts = [];
+ * metamorph_current_layout;
  */
 var metamorph_current_section = '';
 var metamorph_current_region = '';
@@ -80,7 +82,7 @@ UTF8Encode = function (b) {
       colsm: region.colsm,
       colmd: region.colmd,
       collg: region.collg
-    }).addClass('metamorph-region').addClass('col-xs-' + region.colxs).addClass('col-sm-' + region.colsm).addClass('col-md-' + region.colmd).addClass('col-lg-' + region.collg).html('<div class="region-inner"><i class="fa fa-arrows region-sortable"></i>' + region.title + '<i class="fa fa-gears region-settings pull-right"></i></div>');
+    }).addClass('metamorph-region').addClass('col-xs-' + region.colxs).addClass('col-sm-' + region.colsm).addClass('col-md-' + region.colmd).addClass('col-lg-' + region.collg).html('<div class="region-inner"><i class="fa fa-arrows-alt region-sortable"></i>' + region.title + '<i class="fa fa-wrench region-settings pull-right"></i></div>');
   }
 
   function sectionToHtml(section) {
@@ -105,7 +107,7 @@ UTF8Encode = function (b) {
       });
     }
     if (section.key != 'unassigned') {
-      var $sectionHeader = $('<div class="metamorph-section-header"><i class="fa fa-arrows section-sortable"></i><span class="section_title">' + section.title + '</span><i class="fa fa-gears section-settings pull-right"></i></div>');
+      var $sectionHeader = $('<div class="metamorph-section-header"><i class="fa fa-arrows-alt section-sortable"></i><span class="section_title">' + section.title + '</span><i class="fa fa-wrench section-settings pull-right"></i></div>');
     } else {
       var $sectionHeader = $('<div class="metamorph-section-header"><span class="section_title">' + section.title + '</span></div>');
     }
@@ -155,7 +157,7 @@ UTF8Encode = function (b) {
           $('#edit-metamorph-layouts-edit').dialog('open');
         });
         layoutTab.append(editLayout);
-        var layoutRemove = $('<span title="Remove this lyaout" class="fa fa-ban"></span>').css({
+        var layoutRemove = $('<span title="Remove this layout" class="fa fa-trash-o"></span>').css({
           color: '#FF0000',
           cursor: 'pointer',
           marginRight: '5px'
@@ -232,7 +234,7 @@ UTF8Encode = function (b) {
       'data-title': title,
       'data-fullwidth': 'no'
     });
-    var sectionHeader = $('<div class="metamorph-section-header"><i class="fa fa-arrows section-sortable"></i>' + title + '</div>');
+    var sectionHeader = $('<div class="metamorph-section-header"><i class="fa fa-arrows-alt section-sortable"></i>' + title + '</div>');
     var sectionContent = $('<ul>').addClass('metamorph-section-inner row');
     section.append(sectionHeader).append(sectionContent);
     $('#metamorph_sections').append(section);
